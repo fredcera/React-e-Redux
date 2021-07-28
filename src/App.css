@@ -1,38 +1,12 @@
-.App {
-  text-align: center;
-}
+.App .Cards {
+    display: flex;
+    justify-content: center; /* pega a referencia do eixo em que
+    esta disposto neste caso o horizontal */
+    flex-wrap: wrap; /* isso faz com que quebre a linha quando chegar na borda */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    /* flex-direction: <referencia_de_disposição_do_Card>; 
+    flex-wrap: <referencia_de_quebra_de_linha>;
+    justify-content: <referencia_de_espaçamento_justificado(vertical)>;
+    align-items: <referencia_de_alinhamento_horizontal> ;*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
