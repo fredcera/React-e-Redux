@@ -1,7 +1,7 @@
 /* Aqui temos as configurações do estilo do tag Card */
 .Card{ /* Contra as informações do estilo do Card */
-    background-color: red; /* cor do fundo */
-    border: 3px solid red; /* adiciona uma borda interna */
+    /*background-color: red; /* cor do fundo */
+    border: 3px solid; /* adiciona uma borda interna */
     border-radius: 10px; /* borda arredondada */
     overflow: hidden; /* parte de baixo */
     margin: 10px;
@@ -9,8 +9,8 @@
     display: flex; /* isso define o 'Card' como flexbox */
     flex-direction: column; /* isso define a direção da disposição dos 'Cards' */
 
-    max-width: 300px; /* isso define a largura maxima do 'Card' */
-    min-width: 300px; /* isso define a largura minima do 'Card' */
+    max-width: 500px; /* isso define a largura maxima do 'Card' */
+    min-width: 500px; /* isso define a largura minima do 'Card' */
 }
 
 .Card .Title{ /* Controla as informações de estilo do Title */
@@ -27,4 +27,5 @@
     background-color: white; /* cor do fundo */
     color: black; /* cor da fonte */
     padding: 10px; /* cria um espaço para o titulo determinado (comprimento | porcentagem) */
+    font-size: larger; /* define o tamanho da fonte */
 }

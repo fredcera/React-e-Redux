@@ -6,38 +6,47 @@ import ComParamtro from './componets/basicos/ComParametro'
 import Fragmento from './componets/basicos/Fragmento'
 import Aleatorio from './componets/basicos/Aleatorio'
 import Card from './componets/layout/Card'
+import Familia from './componets/basicos/Familia'
+import FamiliaMembro from './componets/basicos/FamiliaMembro'
 
 export default _ =>   //somente usando 'export default' pode ser usado uma função anonima
     <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
-            <Card titulo="#04 - Desafio Aleatório">
-                <Aleatorio min={1} max={100} />
+            <Card titulo="#05 - Componente com filhos" color='#00C8F8'>
+                <Familia sobrenome='Silva'>
+                    <FamiliaMembro nome='Pedro'/>
+                    <FamiliaMembro nome='Ana'/>
+                    <FamiliaMembro nome='Carlos'/> 
+                </Familia>
             </Card>
+        <Card titulo="#04 - Desafio Aleatório" color="#FA6900">
+            <Aleatorio min={1} max={100} />
+        </Card>
 
-            <Card titulo="#03 - Fragmento">
-                <Fragmento />
-            </Card>
+        <Card titulo="#03 - Fragmento" color="#E94C6F">
+            <Fragmento />
+        </Card>
 
-            <Card titulo="#02 - Com Parametro">
-                <ComParamtro
-                    titulo="Segundo Componente"
-                    subtitulo="Muito legal!"
-                    aluno="Pedro"
-                    nota={9.3} />
-                <ComParamtro
-                    titulo="Repetição do Componente"
-                    subtitulo="Muito toperson!"
-                    aluno="Bernardo"
-                    nota={6.5} />
-            </Card>
+        <Card titulo="#02 - Com Parametro" color="#E8B71A">
+            <ComParamtro
+                titulo="Segundo Componente"
+                subtitulo="Muito legal!"
+                aluno="Pedro"
+                nota={9.3} />
+            <ComParamtro
+                titulo="Repetição do Componente"
+                subtitulo="Muito toperson!"
+                aluno="Bernardo"
+                nota={6.5} />
+        </Card>
 
-            <Card titulo="#01 - Primeiro Component">
-                <Primeiro></Primeiro>
-            </Card>
-        </div>
+        <Card titulo="#01 - Primeiro Component" color="#588C73">
+            <Primeiro></Primeiro>
+        </Card>
     </div>
+    </div >
 
 //a implementação abaixo passou para a de cima como a forma mais reduzida de implementar a mesma coisa
 
